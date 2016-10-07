@@ -52,15 +52,20 @@ a, a:hover {text-decoration: none;}
 
 .clearfix:after {clear: both;}
 
+
+
 .main-wrapper {
 	width: 100%;
 	margin: 0 auto;
 }
 
 header {
-	min-height: 800px;
+	height: 800px;
+	width: 100%;
 	background: url("../images/home-bg.jpg") no-repeat ;
 	background-size: cover;
+	min-height: 500px;
+	min-width: 900px;
 
 }
 
@@ -70,6 +75,7 @@ header {
 	padding-top: 120px;
 	margin: 0 auto;
 	text-align: center;
+	min-width: 600px;
 }
 
 h1 {
@@ -116,14 +122,22 @@ h1 {
 
 #header-content p {
 	font: 14px 'Exo', sans-serif;
-	color: #8b8b8e;
+	color: #282828;
 }
 
 #section-1 {
-	background: url("../images/section-1.jpg") no-repeat  110% 0;
-	padding: 160px 55% 160px 150px;
+	width: 100%;
+	height: 725px;
+	background: url("../images/section-1.jpg") no-repeat 110% 0  ;
+	min-width: 900px;
+	min-height: 500px;
 }
 
+#section-1 div {
+	width: 36%;
+	padding: 180px 0 0 10%;
+	min-width: 500px;
+}
 
 .pink-title {
 	display: inline-block;
@@ -132,24 +146,27 @@ h1 {
 }
 
 .title {
-	display: inline-block;
+	display: block;
 	color: #282828;
 	font: 40px 'Exo', sans-serif;
 	margin-bottom: 40px;
 }
 
 .descript {
+	display: inline-block;
 	font: 16px/24px 'Exo', sans-serif;
 	margin-bottom: 30px;
 	color: #8a8a8a;
-	overflow: hidden;
 }
 
 #section-2 {
+	width: 100%;
 	height: 675px;
 	background: url("../images/section-2.jpg") no-repeat;
 	background-size: cover;
 	text-align: center;
+	min-width: 900px;
+	min-height: 400px;
 }
 
 
@@ -164,6 +181,7 @@ h1 {
 .features-wrap {
 	width: 75%;
 	margin: 0 auto;
+	min-width: 900px;
 }
 
 .some-feature {
@@ -172,6 +190,7 @@ h1 {
 	width: 31%;
 	text-align: center;
 	margin-right: 30px;
+	min-width: 200px;
 
 }
 
@@ -192,30 +211,43 @@ h4 {
 }
 
 #section-3 {
-	height: 415px;
+	width: 100%;
+	height: 550px;
 	background: url("../images/section-3.jpg") no-repeat 0 0;
-	padding: 135px 265px 0 50%; 
+	min-width: 900px;
+}
+
+#section-3 div {
+	float: right;
+	width: 32%;
+	padding: 130px 17% 0 0;
+	min-width: 450px;
 }
 
 #clients {
+	width: 100%;
 	height: 645px;
 	background: url("../images/clients-bg.jpg") no-repeat;
 	background-size: cover;
+	min-width: 900px;
+
+
 }
 
 .clients-wrap {
 	width: 80%;
 	margin: 0 auto;
-	padding-top: 110px;
+	padding-top: 8%;
+	min-width: 900px;
 }
 
 .client {
-	display: inline-block;
+	display: block;
 	float: left;
 	width: 30%;
 	text-align: center;
-	margin-right: 60px;
-
+	margin-right: 5%;
+	min-width: 250px;
 }
 
 .client:last-child {
@@ -231,25 +263,52 @@ h4 {
 }
 
 .logos {
-	width: 65%;
-	margin: 0 auto;
-	padding-top: 70px;
+	width: 100%;
+	padding-top: 5%;
 }
 
-.logos img {
-	margin-right: 90px;
+
+
+@media screen and (max-width: 1100px) {
+	.logos img {
+		margin-right: 3%;
+	}
+
+	.logos img:first-child {
+		margin-left: 13%;
+	}
+
+	.logos img:last-child {
+		margin-right: 0;
+	}
+
 }
 
-.logos img:last-child {
-	margin-right: 0;
+
+@media screen and (min-width: 1100px) {
+
+	.logos img {
+		margin-right: 5%;
+	}
+
+	.logos img:first-child {
+		margin-left: 20%;
+	}
+
+	.logos img:last-child {
+		margin-right: 0;
+	}
+
 }
 
 #section-4 {
+	width: 100%;
 	height: 755px;
 	background: url("../images/section-4.jpg") no-repeat; 
 	background-size: cover;
 	text-align: center;
-	padding: 0 400px;
+	min-width: 900px;
+	min-height: 500px;
 }
 
 #section-4 h5 {
@@ -258,4 +317,9 @@ h4 {
 
 #section-4 h3 {
 	margin-bottom: 50px;
+}
+
+#section-4 div {
+	width: 50%;
+	margin: 0 auto;
 }
